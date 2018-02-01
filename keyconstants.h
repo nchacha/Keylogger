@@ -4,10 +4,10 @@
 #include <map>
 #include <string>
 
+//This file will populate the keyboard strokes into a Map, and create a KEYPAIR class
 
 class KeyPair
 {
-
     //This KEYPAIR class takes in the system's official name for a keystroke
     //and OUR OWN human-friendly name for a keystroke
     public:
@@ -21,7 +21,6 @@ class Keys
 {
     public:
         static std::map<int, KeyPair> KEYS;
-
 };
 
 //a map is a container that uses a key value, and a mapped value
@@ -101,7 +100,7 @@ std::map<int, KeyPair> Keys::KEYS = {
     {0xDC, {"[VK_OEM_5]", "[OEM_5 (| \\)]"}},
     {0xDD, {"[VK_OEM_6]", "[OEM_6 (} ])]"}},
     {0xDE, {"[VK_OEM_7]", "[OEM_7 (\" ')]"}},
-    {0xDF, {"[VK_OEM_8]", "[OEM_8 (ง !)]"}},
+    {0xDF, {"[VK_OEM_8]", "[OEM_8 (ยง !)]"}},
     {0xF0, {"[VK_OEM_ATTN]", "[Oem Attn]"}},
     {0xF3, {"[VK_OEM_AUTO]", "[Auto]"}},
     {0xE1, {"[VK_OEM_AX]", "[Ax]"}},
