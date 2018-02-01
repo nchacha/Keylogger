@@ -18,6 +18,8 @@ int main()
     IO::MKDir(IO::GetOurPath(true));
     InstallHook();
 
+    //this section prevents the console window from appearing when the application is started from the bin\debug\ folders 
+    //however if you run it on CodeBlocks the console window will still appear, because that's just CodeBlocks functionality
     while(GetMessage(&Msg, NULL,0,0))
     {
         TranslateMessage(&Msg);
